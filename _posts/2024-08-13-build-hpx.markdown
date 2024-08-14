@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Installing HPX"
+date:   2024-08-13 14:34:25
+categories: building
+tags: cmake
+---
+In this blog post, we will provide more details on how to install HPX on your ssytem.
+
+## Fedora Linux
+
+On Fedora we mantain the [HPX package](https://packages.fedoraproject.org/pkgs/hpx/) and the package can be installed as follows:
+
+
+{% highlight bash %}
+# Shared memory version
+sudo dnf install hpx-devel
+# Distributed memory version
+sudo dnf install hpx-mpich-devel 
+{% endhighlight %}
+
+
