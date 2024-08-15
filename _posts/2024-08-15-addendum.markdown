@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Addendum"
+date:   2024-08-15 14:34:25
+categories: Addendum
+tags: Addendum
+---
+
+It does not matter how often one proofreads the book, there will be always bugs in the code or some issues. We will document the issues here and update the code on [GitHub](https://github.com/ModernCPPBook/Examples). Of course, we will update the potential new release of the book accordingly. 
+
+
+## Chapter 15
+
+Listing 15.7 on page 175 of the printed version the lines 38 to 40 should be removed. 
+
+{% highlight c++ %}
+38 std::vector<hpx::future<void>> futures;
+39 
+40 hpx::when_all(futures).get();
+{% endhighlight %}
+
+
+
+
+
+
+
+
