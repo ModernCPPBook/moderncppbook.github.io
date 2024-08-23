@@ -21,7 +21,7 @@ sudo dnf install hpx-mpich-devel
 
 ## Mac OS
 
-On Mac OS, we recommend to install the depencies with ´brew´ and compile HPX using CMake as follows:
+On Mac OS, we recommend to install the depencies with `brew` and compile HPX using CMake as follows:
 
 {% highlight bash %}
 brew install hwloc cmake boost
@@ -33,7 +33,23 @@ cmake -DHPX_WITH_FETCH_ASIO=ON ..
 make -j 8
 {% endhighlight %}
 
+## Spack
 
+On supercomputers and clusters, the HPX package mananger [Spack](https://github.com/spack/spack) can be used to install HPX. 
+
+{% highlight bash %}
+# Install spack (Update v0.22 with the latest Spack release)
+git clone --depth=100 --branch=releases/v0.22 https://github.com/spack/spack.git ~/spack
+# Activate Spack
+. ~/spack/share/spack/setup-env.sh
+# Find compilers
+spack compiler find
+# Install hpx 
+spack install hpx
+# Install distributed hpx
+spack external find openmpi
+spack install hpx networking=mpi ^ôpenmpi 
+{% endhighlight %}
 
 
 
