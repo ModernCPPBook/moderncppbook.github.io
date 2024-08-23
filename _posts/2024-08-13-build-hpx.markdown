@@ -48,7 +48,7 @@ spack compiler find
 spack install hpx
 # Install distributed hpx
 spack external find openmpi
-spack install hpx networking=mpi ^ôpenmpi 
+spack install hpx networking=mpi ^openmpi 
 {% endhighlight %}
 
 
