@@ -11,7 +11,7 @@ It does not matter how often one proofreads the book, there will be always bugs 
 
 ## Chapter 15
 
-Listing 15.7 on page 175 of the printed version the lines 38 to 40 should be removed. 
+[Listing 15.7](https://github.com/ModernCPPBook/Examples/blob/main/cpp/Chapter_15/Listing_15_7.cpp) on page 175 of the printed version the lines 38 to 40 should be removed. 
 
 {% highlight c++ %}
 38 std::vector<hpx::future<void>> futures;
@@ -19,10 +19,9 @@ Listing 15.7 on page 175 of the printed version the lines 38 to 40 should be rem
 40 hpx::when_all(futures).get();
 {% endhighlight %}
 
-## Apeendix
+## Appendix
 
-Listing A.10 is correct in source file, however, the pipes used for the ranges are not correctly rendered in the book.
-
+Listing A.10 is correct in [source file](https://github.com/ModernCPPBook/Examples/blob/main/cpp/Chapter_20/Listing_20_10.cpp), however, the pipes used for the ranges are not correctly rendered in the book.
 
 {% highlight c++ %}
 #include <cmath>
