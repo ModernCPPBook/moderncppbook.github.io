@@ -8,6 +8,19 @@ tags: Addendum
 
 It does not matter how often one proofreads the book, there will be always bugs in the code or some issues. We will document the issues here and update the code on [GitHub](https://github.com/ModernCPPBook/Examples). Of course, we will update the potential new release of the book accordingly. 
 
+## Chapter 3
+
+[Listing 3.3](https://github.com/ModernCPPBook/Examples/blob/main/notebooks/Chapter_3.ipynb) the cases for even and odd are wrong in the code and should be chnaged to
+
+{% highlight c++ %}
+if (values.size() % 2 == 0) {
+  median = *mid; |\label{container:median:list:defref}|
+}  else {
+  auto mid_one = values.begin();
+  std::advance(mid_one, mid_index + 1);
+  median = 0.5 * (*mid + *mid_one);
+} 
+{% endhighlight %}
 
 ## Chapter 15
 
