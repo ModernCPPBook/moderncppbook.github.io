@@ -22,6 +22,14 @@ if (values.size() % 2 == 0) {
 } 
 {% endhighlight %}
 
+[Listing 3.6](https://github.com/ModernCPPBook/Examples/blob/main/notebooks/Chapter_3.ipynb) the [C++20 range-based for statements with initializer](https://en.cppreference.com/w/cpp/language/range-for)
+
+{% highlight c++ %}
+for (int index = 0; const int value : values) {
+std::cout << "Index=" << index++ << " Value= " << value
+}
+{% endhighlight %}
+
 ## Chapter 15
 
 [Listing 15.7](https://github.com/ModernCPPBook/Examples/blob/main/cpp/Chapter_15/Listing_15_7.cpp) on page 175 of the printed version the lines 38 to 40 should be removed. 
