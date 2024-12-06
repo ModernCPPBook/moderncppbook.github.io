@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing HPX"
+title:  "Building HPX applications"
 date:   2024-12-06 14:34:25
 categories: building
 tags: cmake
