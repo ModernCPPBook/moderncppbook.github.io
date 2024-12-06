@@ -5,7 +5,7 @@ date:   2024-08-13 14:34:25
 categories: building
 tags: cmake
 ---
-In this blog post, we will provide more details on how to install HPX on your ssytem.
+In this blog post, we will provide more details on how to install HPX on your system.
 
 ## Fedora Linux
 
