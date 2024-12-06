@@ -23,6 +23,19 @@ find_package(HPX REQUIRED)
 add_hpx_executable(app SOURCES main.cpp)
 {% endhighlight %}
 
+## Compiling a HPX application
+
+To compile the HPX applicaiton, we generate a new folder `build`, and change the director, and call cmake. Note that `$HPX_INSTALL_DIR` is the path where
+you installed HPX. 
+
+
+{% highlight bash %}
+$ mkdir build
+$ cd build
+$ cmake -DHPX_DIR=$HPX_INSTALL_DIR/hpx/lib64/cmake/HPX ..
+$ make 
+{% endhighlight %}
+
 
 
 
